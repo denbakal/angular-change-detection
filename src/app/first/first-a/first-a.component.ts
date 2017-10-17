@@ -22,4 +22,8 @@ export class FirstAComponent implements OnInit, DoCheck {
     this.changeDetectorRef.detectChanges();
   }
 
+  public markForCheck(): void {
+    console.log('Marking the Change Detection...');
+    this.changeDetectorRef.markForCheck();
+  }
 }
