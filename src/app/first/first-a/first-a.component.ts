@@ -6,6 +6,7 @@ import {ChangeDetectorRef, Component, DoCheck, OnInit} from '@angular/core';
   styleUrls: ['./first-a.component.css']
 })
 export class FirstAComponent implements OnInit, DoCheck {
+  firstAName: string;
 
   constructor(public changeDetectorRef: ChangeDetectorRef) { }
 

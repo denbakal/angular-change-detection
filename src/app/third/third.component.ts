@@ -1,11 +1,13 @@
-import {Component, DoCheck, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, DoCheck, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-third',
   templateUrl: './third.component.html',
-  styleUrls: ['./third.component.css']
+  styleUrls: ['./third.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ThirdComponent implements OnInit, DoCheck {
+  thirdName: string;
 
   constructor() {
     console.log('Initialization the constructor of ThirdComponent...');

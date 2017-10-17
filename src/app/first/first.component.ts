@@ -7,6 +7,7 @@ import {ChangeDetectionStrategy, Component, DoCheck, OnInit} from '@angular/core
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FirstComponent implements OnInit, DoCheck {
+  firstName: string;
 
   constructor() {
     console.log('Initialization the constructor of FirstComponent...');
